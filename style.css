@@ -1,0 +1,63 @@
+body {
+    background-image: url('bramibolte.jpg'),url('bhrami.jpg'),url('bramibolte.jpg'),url('brami.jpg'),url('blue.jpg');
+    background-repeat: repeat-y,repeat-y,repeat-x,repeat-x,no-repeat;
+    filter: blur(0px);
+    background-size: 90px, 90px,25px,90px,9000px;
+    background-position: bottom right, bottom left, bottom, top, center;
+}
+table.a {
+    margin-right: 450px;
+    margin-left: 450px;
+    text-align: center;
+    margin-bottom: 0.5px;
+    margin-top: 0.5px;
+}  
+
+
+h4 { 
+    text-align: center;
+    margin-right: 465px;
+    margin-left: 465px;
+    margin-top: 0.5px;
+    margin-bottom: 3.5px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 20px;
+    display: inline-table;
+	color: #ff0000;
+    border: 2px solid black;
+    padding: 0.5px;
+}
+h2 {
+    text-align: center;
+    margin-right: 130px;
+    margin-left: 36px;
+    margin-top: 3px;
+}
+h1 {
+    margin-bottom: 0.5px;
+    margin-top: 100px;
+    width: max-content;
+    font-size: 72;
+    position: relative;
+    cursor: pointer;
+    margin: 100px auto;
+}
+h1::after{
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    height: 4px;
+    width: 100%;
+    left: 0;
+    background-color: #0c0b0b;
+    transition: 0.3s;
+    transition-timing-function: ease-in-out;
+    transform: scale(0);
+}
+h1:hover::after{
+    transform: scale(1);
+}
+hr {
+    margin-bottom: 10px;
+    margin-top: 0.5px;
+}
